@@ -8,11 +8,14 @@
     </head>
     <body>
         <header class="container">
+            <!--[if lt IE 9]>
+                <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
             <!--Conteúdo do cabecalho-->
             <h1><img src="img/logo.png" alt="Mirror Fashion"></h1><!--O 'alt' serve para leitores não visuais da pagina, eh tipo uma -->
 
             <p class="sacola">
-                Nenhum item na sacola de compras
+                Nenhum item na sacola de compras 
             </p>
 
             <nav class="menu-opcoes">
@@ -31,8 +34,8 @@
             <div class="container destaque">
                 <section class="busca">
                     <h2>Busca</h2>
-                    <form>
-                        <input type="search">
+                    <form action="http://www.google.com.br/search" id="form-busca">
+                        <input type="search" name="q" id="q">
                         <input type="image" src="img/busca.png">
                     </form>
                 </section><!-- fim .busca -->
@@ -56,11 +59,131 @@
 
         <section id="destaques">
             <!--Painéis com destaques-->
-            
+            <div class="container paineis">
+                <!-- os paineis de novidades e mais vendidos entrarão aqui dentro -->
+                <section class="painel novidades">
+                    <h2>Novidades</h2>
+                    <ol>
+                        <li>
+                            <a href="produto.html">
+                            <figure>
+                                <img src="img/produtos/miniatura1.png">
+                                <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+                            </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="produto.html">
+                                <figure>
+                                    <img src="img/produtos/miniatura2.png">
+                                    <figcaption>Camisa de caveira por R$ 69,90</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="produto.html">
+                                <figure>
+                                    <img src="img/produtos/miniatura3.png">
+                                    <figcaption>Conjunto topzao por R$ 159,90</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="produto.html">
+                                <figure>
+                                    <img src="img/produtos/miniatura4.png">
+                                    <figcaption>Blusa puffer por R$ 200,00</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="produto.html">
+                                <figure>
+                                    <img src="img/produtos/miniatura5.png">
+                                    <figcaption>Regata por R$ 39,90</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="produto.html">
+                                <figure>
+                                    <img src="img/produtos/miniatura6.png">
+                                    <figcaption>Regata rosa por R$ 39,90</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="painel mais-vendidos">
+                    <h2>Mais vendidos</h2>
+                    <ol>
+                        <li>
+                            <a href="produto.html">
+                            <figure>
+                                <img src="img/produtos/miniatura1.png">
+                                <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+                            </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="produto.html">
+                                <figure>
+                                    <img src="img/produtos/miniatura2.png">
+                                    <figcaption>Camisa de caveira por R$ 69,90</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="produto.html">
+                                <figure>
+                                    <img src="img/produtos/miniatura3.png">
+                                    <figcaption>Conjunto topzao por R$ 159,90</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="produto.html">
+                                <figure>
+                                    <img src="img/produtos/miniatura4.png">
+                                    <figcaption>Blusa puffer por R$ 200,00</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="produto.html">
+                                <figure>
+                                    <img src="img/produtos/miniatura5.png">
+                                    <figcaption>Regata por R$ 39,90</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="produto.html">
+                                <figure>
+                                    <img src="img/produtos/miniatura6.png">
+                                    <figcaption>Regata rosa por R$ 39,90</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ol>
+                </section>
+            </div>
         </section>
 
         <footer>
             <!--Conteúdo do rodapé-->
+            <div class="container">
+                <img src="img/logo-rodape.png" alt="Logo Mirror Fashion">
+
+                <ul class="social">
+                    <li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
+                    <li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
+                    <li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
+                </ul>
+            </div>
         </footer>
+
+        <script src="js/home.js"></script><!--aqui vc ta referenciando o arquivo js usado para fazer alguma coisa neste html-->
     </body>
 </html>
