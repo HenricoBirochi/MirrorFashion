@@ -43,7 +43,15 @@
                     <h2>Departamentos</h2>
                     <nav>
                         <ul>
-                            <li><a href="#">Blusas e Camisas</a></li>
+                            <li>
+                                <a href="#">Blusas e Camisas</a>
+                                <ul>
+                                    <li><a href="#">Manga curta</a></li>
+                                    <li><a href="#">Manga comprida</a></li>
+                                    <li><a href="#">Camisa social</a></li>
+                                    <li><a href="#">Camisa casual</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">Calças</a></li>
                             <li><a href="#">Saias</a></li>
                             <li><a href="#">Vestidos</a></li>
@@ -53,6 +61,8 @@
                         </ul>
                     </nav>
                 </section><!-- fim .menu-departamentos -->
+                <input onclick="ParaLooping()" type="button" value="Para o looping das fotos" class="botao desliga">
+                <input onclick="RecomecaLooping()" type="button" value="Recomeça o looping" class="botao liga">
                 <img src="img/destaque-home.png" alt="Promoção: Big City Night">
             </div><!-- fim .container .destaque -->
         </section>
