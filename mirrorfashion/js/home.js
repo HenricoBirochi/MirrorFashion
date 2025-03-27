@@ -15,11 +15,11 @@ function trocaBanner() {
     document.querySelector('.destaque img').src = banners[bannerAtual];
 }
 
-var timer = setInterval(trocaBanner, 4000);
+var timer = setInterval(trocaBanner, 1000);
 
 function ParaLooping() {
     clearInterval(timer);
 }
 function RecomecaLooping(){
-    timer = setInterval(trocaBanner, 4000);
+    timer = setInterval(trocaBanner, 1000);
 }
